@@ -1,0 +1,23 @@
+@import "src/styles/imports";
+
+$primaryBackground: $white;
+
+.container {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    height: 100vh;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: $primaryBackground;
+    overflow: hidden;
+}
+
+.container__main {
+    background-color: $primaryBackground;
+
+    @include sm {
+        padding-top: 0;
+    }
+}
